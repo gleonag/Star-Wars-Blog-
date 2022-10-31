@@ -1,12 +1,13 @@
 import React from 'react'
+import {LogoRM} from '../img/LogoRM.png'
 
 const Navbar = () => {
 
-const logoStarWars = "https://1000marken.net/wp-content/uploads/2021/01/Star-Wars-Logo.png"
+const logoRickMorty = "https://i0.wp.com/aldescubierto.org/wp-content/uploads/2021/07/Portada_RickyMorty_web.jpg?resize=800%2C445&ssl=1"
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"><img width="100px" src={logoStarWars}></img></a>
+        <a className="navbar-brand" href="#"><img width="150px" src={logoRickMorty}></img></a>
         <div className="col-2 justify-content-end">
                     <div className="btn-group">
                         <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
