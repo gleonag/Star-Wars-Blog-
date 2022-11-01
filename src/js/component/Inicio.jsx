@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { todosPersonajes } from '../funciones/funciones.js'
+import Cards from '../Views/Cards.jsx'
 
 const Inicio = () => {
   const [personajes, setPersonajes] = useState (null)
@@ -10,10 +11,8 @@ const Inicio = () => {
     <>
       {personajes !== null ? (
         personajes.map(personaje => (
-          <div key={personaje.id}>
-            <a href={`/personaje/${personaje.id}`}>{personaje.name}</a>
-            <img src={personaje.image} />
-          </div>)
+          <Cards key={personaje.id} id={personaje.id} name={personaje.name} status={personaje.status} gender={personaje.gender} image={personaje.image}/>
+          )
         )) : ('no hay personajes')}
     </>
   )

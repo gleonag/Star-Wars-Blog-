@@ -2,6 +2,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./component/App.jsx";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-//render your react application
 ReactDOM.render(<App />, document.querySelector("#app"));

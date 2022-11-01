@@ -1,5 +1,6 @@
 import React from 'react'
 import {LogoRM} from '../img/LogoRM.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -7,15 +8,15 @@ const logoRickMorty = "https://i0.wp.com/aldescubierto.org/wp-content/uploads/20
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"><img width="150px" src={logoRickMorty}></img></a>
+
+        <a className="navbar-brand" href="/"><img width="150px" src={logoRickMorty}></img></a>
         <div className="col-2 justify-content-end">
                     <div className="btn-group">
                         <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i className="bi bi-nut"></i>
                           Favourites
                         </button>
-                        <ul className="dropdown-menu">
-                   
+                        <ul className="dropdown-menu">    
+                          {/* dentro de favoritos              */}
                         </ul>
                     </div>
           </div>

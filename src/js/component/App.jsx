@@ -4,6 +4,7 @@ import Inicio from "./Inicio.jsx";
 import Personaje from "./Personaje.jsx";
 import Navbar from "./Navbar.jsx";
 
+
 const App = () => {
 	return (
 		<div className="text-center">
