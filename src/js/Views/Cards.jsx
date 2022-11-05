@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom';
 
 
 
-const Cards = (params) => {
+const Cards = (props) => {
   return (
     
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={params.image} />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>{params.name}</Card.Title>
-        <Card.Text>{params.gender}, {params.status}</Card.Text>
-        <Link to={`/personaje/${params.id}`}>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>{props.gender}, {props.status}</Card.Text>
+        <Link to={`/personaje/${props.id}`}>
           <Button variant="primary">Learn More!</Button>
         </Link>
         <Button variant="primary" style={{marginLeft:'4rem'}}><RiHeart3Fill/></Button>
