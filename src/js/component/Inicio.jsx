@@ -11,7 +11,14 @@ const Inicio = () => {
     <>
       {personajes !== null ? (
         personajes.map(personaje => (
-          <Cards key={personaje.id} id={personaje.id} name={personaje.name} status={personaje.status} gender={personaje.gender} image={personaje.image}/>
+          
+          <Cards key={personaje.id} 
+            id={personaje.id} 
+            name={personaje.name} 
+            status={personaje.status} 
+            gender={personaje.gender} 
+            image={personaje.image}/>
+          
           )
         )) : ('no hay personajes')}
     </>

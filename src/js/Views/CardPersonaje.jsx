@@ -2,21 +2,32 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 
 const CardPersonaje = (props) => {
-  return (
-    <Card class="card mb-3" style="max-width: 540px;">
-    <Card class="row g-0">
-      <Card class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="..."/>
-      </Card>
-      <Card class="col-md-8">
-        <Card class="card-body">
-          <h5 class="card-title">{props.name}</h5>
-          <p class="card-text">{props.gender}</p>
-          <p class="card-text"><small class="text-muted">{props.status}</small></p>
-        </Card>
-      </Card>
-    </Card>
-  </Card>
+  return (  
+    <div style={{backgroundColor:'#606060'}}>
+      <div className="container" style= {{padding:'3%',backgroundColor:'grey'}}>
+        <div className="card" style={{diplay:'flex',backgroundColor:'#CCFFCC'}}>
+          <div className="card-superior" style={{display:'flex'}}>
+            <div className="card-left">
+                <img src={props.image}/>
+      
+            </div>
+            <div className="card-right" style={{display:'flex'}}>
+              <ul style={{listStyleType: 'none'}}>
+                <li><h2>{props.name}</h2></li>
+                <li><h5>{props.status}</h5></li>
+                <li><h5>{props.gender}</h5></li>
+              </ul>
+            </div>
+          </div>
+          <div className="card-down" style={{display:'flex', justifyContent:'space-around'}}>
+
+            <p>{props.origin}</p>
+            <p>{props.location}</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
   )
 }
 

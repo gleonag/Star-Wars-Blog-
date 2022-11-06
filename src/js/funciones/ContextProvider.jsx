@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 
 
-const MyContext = React.createContext(null);
+export const MyContext = React.createContext(null);
 
     const ContextProvider = (props) => {
 
         const [store, setStore] = useState(
             {
-                favoritos: []
+                favorites: []
             }
         );
     const [actions, setActions] = useState(
